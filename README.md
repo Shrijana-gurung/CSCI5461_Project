@@ -15,9 +15,9 @@ To finalize our approach for this data challenge, we initially intend to explore
 Feature selection methods often enhance the ML performance. Hence, a correlation-based feature selection method will be attempted with the following learning algorithms to check for performance improvements.
 
 # Learning Algorithms to attempt: 
-Multi-Level Perceptron (ANN) 
-K Nearest Neighbor (KNN): Choosing k as sqrt(N) where N is the total number of training data
-Random forest classification algorithm
+1) Multi-Level Perceptron (ANN) 
+2) K Nearest Neighbor (KNN): Choosing k as sqrt(N) where N is the total number of training data
+3) Random forest classification algorithm
 
 # Evaluation metrics to choose the final algorithm:
 Prediction accuracy: Percent of correct classification on the validation data
