@@ -1,9 +1,9 @@
-# CSCI 5461 Project Proposal: Human Gene Function Prediction Challenge
+# CSCI 5461 Project: Human Gene Function Prediction Challenge
 
 Collaboraters: Shrijana Gurung and Jesus Garcia Garcia
 
 # Goal
-To identify a supervised learning approach that utilizes gene dependency data from genome-wide CRISPR-Cas9 screens to predict human gene function.
+To identify a supervised learning approach that utilizes gene dependency data from genome-wide CRISPR-Cas9 screens to predict human gene function. This is a multi-class classification problem.
 
 # Dataset: Provided in Kaggle
 - Human genetic Interaction Profiles (genes X cell lines)
@@ -39,7 +39,14 @@ Operating Characteristics Curve”.
 
 # Result (Selected Approach)
 K-NN (K = sqrt(sample size)) and Random Forest (trees = 100) obtained the best score among all classifiers, so, we used a stacked approach for this. The following is our selected Classification Approach:
+
 (1) Data standardization
+
 (2) Predict the test data probability using K-NN where K is selected as the square root of the total number of training samples.
+
 (3) Predict the test data probability using RF where the total number of decision trees is 100
+
 (4) Average of the prediction probabilities for KNN and RF was taken as the final prediction.
+
+# Future Work Related
+The future work part focuses on individual label vs all label classfications. Moreover, identifying that data is unbalanced for the individual label and the possibility of balancing the data by adding more data to the unbalanced side.
